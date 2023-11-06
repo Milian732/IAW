@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conversion de monedas</title>
+</head>
+<body>
+    <h2>Conversor de euros a pesetas</h2>
+    <form action="conversor.php" method="post">
+        <label for="euros">Cantidad en Euros:</label>
+        <input type="text" name="euros" id="euros" required>
+	<label for="moneda"> Convertir a:</label>
+	<select id="moneda" name="moneda">
+	  <option value="pesetas">Pesetas</option>
+	  <option value="dolares">Dolares</option>
+	  <option value="libras">Libras</option>
+	  <option value="yenes">Yenes</option>
+	  <option value="francos">Francos</option>
+	</select><br>
+        <input type="submit" name="submit" value="convertir">
+    </form>
+</body>
+</html>
