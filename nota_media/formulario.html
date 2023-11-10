@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/formulario.css">
+    <title>Nota media</title>
+</head>
+<body>
+    <div class="contacto">
+      <div class="formulario">      
+        <h1>Nota Media</h1>
+          <h3 id="subtitulo">Rellena el formulario con tus datos</h3>
+          <form action="formulario.php" method="post">
+              <p>
+                <label for="nombre">Nombre y Apellidos
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre y apellidos" required>
+              </p>                  
+              <p>
+                <label for="correo">Correo Electrónico
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="correo" id="correo" placeholder="Escribe tu correo electronico" required>
+              </p>                
+              <p>
+                <label for="dni" >DNI
+                  <span class="obligatorio">*</span>
+                </label>
+                <input type="text" name="dni" id="dni" placeholder="Escribe tu DNI" required>
+              </p>
+          <h3>Notas de las Prácticas</h3>
+              <p>
+                <label for="practica1">Práctica 1
+                </label>
+                <input type="number" name="practica1" id="practica1" step="0.01" placeholder="Escribe la nota de la practica 1">
+              </p>
+              <p>
+                <label for="practica2">Práctica 2
+                </label>
+                <input type="number" name="practica2" id="practica2" step="0.01" placeholder="Escribe la nota de la practica 2">
+              </p>
+              <p>
+                <label for="practica3">Práctica 3
+                </label>
+                <input type="number" name="practica3" id="practica3" step="0.01" placeholder="Escribe la nota de la practica 3">
+              </p>
+              <p>
+                <label for="practica4">Práctica 4
+                </label>
+                <input type="number" name="practica4" id="practica4" step="0.01" placeholder="Escribe la nota de la practica 4">
+              </p>
+          <h3>Notas de los Exámenes</h3>
+              <p>
+                <label for="examen1">Examen 1
+                </label>
+                <input type="number" name="examen1" id="examen1" step="0.01" placeholder="Escribe la nota del examen 1">
+              </p>
+              <p>
+                <label for="examen2">Examen 2
+                </label>
+                <input type="number" name="examen2" id="examen2" step="0.01" placeholder="Escribe la nota del examen 2">
+              </p>                                                                                  
+              <button type="submit" name="submit" id="enviar"><p>Enviar</p></button>    
+              <p class="aviso">
+                <span class="obligatorio"> * </span>los campos son obligatorios.
+              </p>                          
+          </form>
+      </div>  
+    </div>
+</body>
+</html>
