@@ -15,6 +15,12 @@
         $nombre = $_POST["nombre"];
         $correo = $_POST["correo"];
         $dni = $_POST["dni"];
+        $practica1 = $_POST["practica1"];
+        $practica2 = $_POST["practica2"];
+        $practica3 = $_POST["practica3"];
+        $practica4 = $_POST["practica4"];
+        $examen1 = $_POST["examen1"];
+        $examen2 = $_POST["examen2"];
 
         $errores = array();
 
@@ -26,9 +32,34 @@
             $errores[] = "Por favor, ingresa un correo valido";
         }
 
-        if (empty($correo) || !preg_match("/^[0-9]{8}[A-Za-z]$/", $dni)) {
+        if (empty($dni) || !preg_match("/^[0-9]{8}[A-Za-z]$/", $dni)) {
             $errores[] = "Por favor, ingresa un DNI valido";
         }
+
+        if (empty($practica1) || $practica1 < 0 || $practica1 > 10) {
+            $errores[] = "Por favor, ingresa una nota valida para la practica 1";
+        }
+
+        if (empty($practica2) || $practica2 < 0 || $practica2 > 10) {
+            $errores[] = "Por favor, ingresa una nota valida para la practica 2";
+        }
+
+        if (empty($practica3) || $practica3 < 0 || $practica3 > 10) {
+            $errores[] = "Por favor, ingresa una nota valida para la practica 3";
+        }
+
+        if (empty($practica4) || $practica4 < 0 || $practic4 > 10) {
+            $errores[] = "Por favor, ingresa una nota valida para la practica 4";
+        }
+
+        if (empty($examen1) || $examen1 < 0 || $examen1 > 10) {
+            $errores[] = "Por favor, ingresa una nota valida para el examen 1";
+        }
+
+        if (empty($examen2) || $examen2 < 0 || $examen2 > 10) {
+            $errores[] = "Por favor, ingresa una nota valida para el examen 2";
+        }
+
 
         if (!empty($errores)) {
             echo "<p style='color: red;'>Errores:</p>";
