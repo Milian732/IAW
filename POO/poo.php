@@ -48,16 +48,8 @@ class Persona {
 
     public function imprimir(){
         $cadena = "Nombre de la persona: " . $this->nombre . " " . $this->apellido1 . " " . $this->apellido2 . ", Años: " . $this->edad;
-        echo $cadena;
+        return $cadena;
     }
 
 }
-
-$persona = new Persona('Adrian','Milian','Palomares', 23);
-$persona->imprimir();
-$persona->set_nombre('Alberto');
-echo "<br><br>";
-echo $persona->get_nombre();
-echo "<br><br>";
-$persona->imprimir();
 ?>
